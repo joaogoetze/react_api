@@ -1,0 +1,10 @@
+Criar componente simples (botão)
+Usar componente
+Fazer esse componente ser funcional (ao clicar no botão abrir uma tela)
+
+Criar rotas
+Fazer um botão normal que manda para uma das rotas
+Usar um componente que manda o usuário para essa nova rota
+
+Criar um componente que é um parágrafo
+Criar um botão que mostra esse componente
