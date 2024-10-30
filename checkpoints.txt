@@ -1,10 +1,11 @@
-Criar componente simples (botão)
-Usar componente
+OK Criar componente simples (botão)
+OK Usar componente
 Fazer esse componente ser funcional (ao clicar no botão abrir uma tela)
+OBS: Fazer esse botão poder ser chamado em qualquer tela, porém em cada tela,
+esse botão vai direcionar para um local diferente
 
-Criar rotas
-Fazer um botão normal que manda para uma das rotas
-Usar um componente que manda o usuário para essa nova rota
+OK Criar rotas
+OK Fazer um botão normal que manda para uma das rotas
 
 Criar um componente que é um parágrafo
 Criar um botão que mostra esse componente

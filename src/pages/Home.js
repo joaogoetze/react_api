@@ -1,30 +1,28 @@
 import React from 'react';
-import logo from '../logo.svg';
-import MyButton from '../components/Button';
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
+
+  //CRIAR ROTAS
+  //CRIAR REUSABLEBUTTON DENTRO DO RETURN QUE CHAME UMA DESSAS ROTAS
+
+
+  // Atribui as funcionalidades de useNavigate para dentro de um objeto
   const navigate = useNavigate();
 
+  // É uma função, que faz a ação de navegar para um rota específica
   const goToDashboard = () => {
     navigate('/dashboard');
   }
 
+  const goToLearReact = () => {
+    navigate('/learnreact');
+  }
+
   return(
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-        <br></br>
-        <MyButton />
-        <br></br>
-        <button onClick={goToDashboard}>Dashboard</button> 
-      </header> 
+    <div>
+      <button onClick={goToDashboard}>Dashboard</button>
+      <button onClick={goToLearReact}>LearReact</button>
     </div>
   );
 }
