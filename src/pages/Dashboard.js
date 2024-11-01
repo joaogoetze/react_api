@@ -27,6 +27,7 @@ function Dashboard() {
         <div>
             <ResusableButton onPress={() => goToLink('/learnreact')} title='Leva para Rota'/>
             <ResusableButton onPress={() => goToDestination('https://youtube.com')} title='Leva para Youtube'/>
+            <button onClick={() => goToDestination('/api')}>Requisição</button>
         </div>
     );
 }
