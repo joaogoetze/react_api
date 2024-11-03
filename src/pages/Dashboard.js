@@ -25,9 +25,9 @@ function Dashboard() {
     
     return (
         <div>
-            <ResusableButton onPress={() => goToLink('/learnreact')} title='Leva para Rota'/>
-            <ResusableButton onPress={() => goToDestination('https://youtube.com')} title='Leva para Youtube'/>
-            <button onClick={() => goToDestination('/api')}>Requisição</button>
+            <ResusableButton onPress={() => goToLink('/learnreact')} title='Leva para Rota'/><br></br>
+            <ResusableButton onPress={() => goToDestination('https://youtube.com')} title='Leva para Youtube'/><br></br>
+            <button onClick={() => goToDestination('/requisitions')}>Requisições</button>
         </div>
     );
 }

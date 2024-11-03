@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
-function Request() {
+function ReadCars() {
     const [data, setData] = useState([]);
     const [error, setError] = useState(null);
 
     useEffect(() => {
         axios
-            .get("https://restcountries.com/v3.1/all?fields=name")
+            .get("http://127.0.0.1:3200/api/readCars")
             .then((response) => setData(response.data))
             .catch((error) => setError(error.message));
     }, []);
@@ -18,10 +18,10 @@ function Request() {
             <h1>Dados da API</h1>
             {error && <p>{error}</p>}
             <ul>
-                {data.map((pais) => (<li key={pais.name.common}>{pais.name.common}</li>))}
+                {data.map((car) => (<li key={car.car_name}>{car.car_name}</li>))}
             </ul>
         </div>
     );
 }
 
-export default Request;
+export default ReadCars;
