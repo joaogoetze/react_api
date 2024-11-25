@@ -3,6 +3,8 @@ import ResusableButton from '../components/ReusableButton';
 import { useNavigate } from 'react-router-dom';
 
 function Dashboard() {
+
+    //COLOCAR O REDIRECIONAMNETO NO REUSABLE BOTON
     
     const navigate = useNavigate();
 
@@ -13,21 +15,25 @@ function Dashboard() {
 
     //função que confere se é um link externo ou é uma rota interna do sistema, e transfere para o certo
     const goToDestination = (destination) => {
-        if(destination.startsWith("http"))
-        {
+        if(destination.startsWith("http")){
             window.open(destination, "_blank");
         }
-        else
-        {
+        else {
             navigate(destination);
         }
     }
     
     return (
         <div>
-            <ResusableButton onPress={() => goToLink('/learnreact')} title='Leva para Rota'/><br></br>
-            <ResusableButton onPress={() => goToDestination('https://youtube.com')} title='Leva para Youtube'/><br></br>
-            <button onClick={() => goToDestination('/requisitions')}>Requisições</button>
+            <ResusableButton 
+                onPress={() => goToLink('/learnreact')} title='Leva para Rota'
+            />
+            <ResusableButton 
+                onPress={() => goToDestination('https://youtube.com')} title='Leva para Youtube'
+            />
+            <button 
+                onClick={() => goToDestination('/requisitions')}>Requisições
+            </button>
         </div>
     );
 }
